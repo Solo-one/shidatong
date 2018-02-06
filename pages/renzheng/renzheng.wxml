@@ -1,0 +1,76 @@
+<view class="container">
+  <form bindsubmit="playSub" bindreset="formReset" report-submit="true">
+    <view class="header">
+      <image class="headerImg" src="{{headerImage}}"></image>
+    </view>
+    <text class="headertext"></text>
+    <view class="formitem">
+      <text class="title">角色:</text>
+      <view class="section2">
+        <radio-group class="radio-group input" bindchange="radioChangeRole">
+          <label class="radio" wx:for="{{roles}}" wx:key="name"><radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}</label>
+        </radio-group>
+      </view>
+    </view>
+    <view class="{{roleflag?'role_show':'role_hide'}}">
+      <view class="formitem">
+        <text class="title">请选择:</text>
+        <view class="section-roles">
+          <picker bindchange="bindPickerChange" value="{{index}}" range="{{roleArr}}" range-key="{{'name'}}">
+            <view class="picker">
+              {{roleTip}}
+            </view>
+            <image src="/images/select.png" class='select'></image>
+          </picker>
+        </view>
+      </view>
+    </view>
+    <view class="formitem">
+      <text class="title">班级:</text>
+      <view class="section">
+        <input class="input" name="classId" placeholder="如格式 “201703”" />
+      </view>
+    </view>
+    <view class="{{roleflag?'role_hide':'role_show'}}">
+      <view class="formitem">
+        <text class="title">学生学号:</text>
+        <view class="section">
+          <input class="input" name="number" placeholder="如格式 “01”" />
+        </view>
+      </view>
+    </view>
+    <view class="formitem">
+      <text class="title">姓名:</text>
+      <view class="section">
+        <input class="input" name="name" placeholder="请填写老师或学生姓名" />
+      </view>
+    </view>
+    <view class="formitem">
+      <text class="title">性别:</text>
+      <view class="section2">
+        <radio-group class="radio-group input" bindchange="radioChangeSex">
+          <label class="radio" wx:for="{{sexs}}" wx:key="name">
+            <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+          </label>
+        </radio-group>
+      </view>
+    </view>
+    <view class="formitem">
+      <text class="title">手机号:</text>
+      <view class="section">
+        <input class="input" name="phone" type="number" placeholder="请输入手机号" />
+      </view>
+    </view>
+    <view class="{{roleflag?'role_hide':'role_show'}}">
+      <view class="formitem">
+        <text class="title">关系:</text>
+        <view class="section">
+          <input class="input" name="related" placeholder='与学生关系,如“爸爸”' />
+        </view>
+      </view>
+    </view>
+    <view class="formitem">
+      <button class="sub" formType="submit">确认注册</button>
+    </view>
+  </form>
+</view>

@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class="container">
+  <text class='title'>{{classId}} 级通讯录：</text>
+  <view class='header'>
+    <text class='name'>姓名/(关系)</text>
+    <text class='phone'>联系方式</text>
+    <text class='call'>呼叫</text>
+  </view>
+
+  <view class="list-block">
+    <block wx:for="{{contacts}}" wx:key="id" wx:for-item="contact">
+      <view class="block" bindtap="playTap" data-id="{{contact.phone}}">
+        <text class='name' selectable='true'>{{contact.name}}/({{contact.related}})</text>
+        <text class='phone' selectable='true'>{{contact.phone}}</text>
+        <text class='call'><text>Call</text></text>
+      </view>
+    </block>
+  </view>
+
+</view>

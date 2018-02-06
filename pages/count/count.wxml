@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class="container">
+  <text class='title'>已回执学生统计表:（回执数:{{pnum}}人）</text>
+  <view class='header'>
+    <text class='number'>学号</text>
+    <text class='name'>学生姓名</text>
+    <text class='gender'>回执人关系</text>
+  </view>
+
+  <view class="list-block">
+
+    <block wx:for="{{receipts}}" wx:key="nId" wx:for-item="receipt">
+      <view class="block" bindtap="playTap" data-id="{{receipt.nId}}">
+        <text class='number'>{{receipt.number}}</text>
+        <text class='name'>{{receipt.name}}</text>
+        <text class='gender'>{{receipt.related}}</text>
+      </view>
+    </block>
+  </view>
+</view>

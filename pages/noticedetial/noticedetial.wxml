@@ -1,0 +1,56 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="{{noticeExist?'view_hide':'view_show'}}">
+    <view class="usermotto">
+      <text class="user-motto">该公告已被发布者删除！</text>
+    </view>
+  </view>
+
+  <view class="{{noticeExist?'view_show':'view_hide'}}">
+    <view class="{{showView?'view_hide':'view_show'}}">
+      <!-- <view class="usermotto">
+      <text class="user-motto">您还没有注册呢——</text>
+    </view>
+    <view class="parent">
+      <text class="renzheng" bindtap="playTapRen">点击申请注册</text>
+    </view> -->
+    </view>
+    <view class="{{showView?'view_show':'view_hide'}}">
+      <view class="container1">
+        <text class='title' selectable='true'>{{title}}</text>
+
+        <text class='person' selectable='true'>{{person}}</text>
+        <view class="time-delete">
+          <text class='time' selectable='true'>{{time}}</text>
+          <text class="{{deleteflag?'delete_show':'view_hide'}}" bindtap="deleteTap" selectable='true'>删除</text>
+        </view>
+        <view class="liness"></view>
+        <text class='content' selectable='true'>{{content}}</text>
+        <view class="liness"></view>
+        <!-- <view class="document">
+          <text class='content' selectable='true'>附加文档:</text>
+          <text class="btn" bindtap="documentTap">xxxxxx.xlsx</text>
+        </view>
+        <view class="liness"></view> -->
+        <view class="{{imageShow?'view_show':'view_hide'}}">
+          <text class='images'>{{imageTitle}}</text>
+          <block wx:for="{{gridsImg}}" wx:key="*this" wx:for-item="image">
+            <view class="block" bindtap="playTap" data-id="{{gridsImg[index]}}">
+              <image class="weui-grid__icon " src="{{gridsImg[index]}} " mode="aspectFill" />
+            </view>
+          </block>
+        </view>
+
+        <view class="{{purpose?'view_show':'view_hide'}}">
+          <view class="footer">
+            <button class='sub' bindtap="playCount">统计</button>
+            <button class='sub' bindtap="playHuizhi" class="{{reFlag? 'hide': 'show'}} ">确认回执</button>
+          </view>
+        </view>
+        <view class="{{purpose?'view_hide':'view_show'}}">
+          <text class='content1'>如需回执，请到"通知公告"中确认回执，谢谢。</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

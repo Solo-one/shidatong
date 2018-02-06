@@ -1,0 +1,285 @@
+/**index.wxss**/
+
+/* #status0 {
+  display: block;
+}
+
+#status1 {
+  display: none;
+} */
+
+.bright789_view_hide {
+  display: none;
+}
+
+.bright789_view_show {
+  display: block;
+}
+
+.role_hide {
+  display: none;
+}
+
+.role_show {
+  display: block;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30rpx;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 60rpx 20rpx 20rpx 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+  justify-content: center;
+  display: flex;
+}
+
+.parent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.renzheng {
+  margin-top: 10px;
+  height: 35px;
+  line-height: 35px;
+  width: 120px;
+  border-radius: 10px;
+  background: #09bb07;
+  text-align: center;
+  color: white;
+}
+
+page {
+  background: white;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.headerImg {
+  width: 220rpx;
+  height: 240rpx;
+  margin-top: 20rpx;
+  margin-bottom: 5rpx;
+  border-radius: 6px;
+}
+
+.headertext {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24rpx;
+}
+
+.title {
+  width: 80px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.formitem {
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.section {
+  margin-left: 3px;
+  height: 34px;
+  width: 380rpx;
+  border-bottom: 1px solid #333;
+  line-height: 34px;
+}
+
+.sub {
+  height: 30px;
+  line-height: 30px;
+  width: 120px;
+  border-radius: 10px;
+  background: #1296db;
+  color: white;
+  margin-bottom: 2rpx;
+  margin-left: 0rpx;
+}
+
+.picker {
+  width: 280rpx;
+  float: left;
+}
+
+.picker-detial {
+  color: black;
+  width: 180rpx;
+  float: left;
+}
+
+.select {
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.delete {
+  color: #3a96ff;
+  font-size: 16px;
+}
+
+.phone, .related {
+  float: left;
+  width: 280rpx;
+}
+
+.change {
+  color: #3a96ff;
+  font-size: 16px;
+}
+
+/*mask*/
+
+.drawer_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+}
+
+/*content*/
+
+.drawer_box {
+  width: 650rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 60%;
+  left: 0;
+  z-index: 1001;
+  background: #fafafa;
+  margin: -150px 50rpx 0 50rpx;
+  border-radius: 6px;
+}
+
+.drawer_title {
+  padding: 15px;
+  font: 16px "microsoft yahei";
+  text-align: center;
+}
+
+.drawer_content {
+  height: 50px;
+  overflow-y: scroll; /*超出父盒子高度可滚动*/
+}
+
+.btn_ok {
+  padding: 10px;
+  font: 16px "microsoft yahei";
+  text-align: center;
+  border: none;
+  background: white;
+  color: #3cc51f;
+}
+
+.top {
+  padding-top: 8px;
+}
+
+.bottom {
+  padding-bottom: 8px;
+}
+
+.title1 {
+  height: 30px;
+  line-height: 30px;
+  width: 180rpx;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.input_base {
+  border: 2rpx solid #ccc;
+  padding-left: 10rpx;
+  margin-right: 50rpx;
+  border-radius: 20rpx;
+  font-size: 16px;
+}
+
+.input_h30 {
+  height: 30px;
+  line-height: 30px;
+}
+
+.input_h60 {
+  height: 60px;
+}
+
+.input_view {
+  font: 12px "microsoft yahei";
+  background: #fff;
+  color: #000;
+  line-height: 30px;
+}
+
+input {
+  font: 12px "microsoft yahei";
+  background: #fff;
+  color: #000;
+}
+
+radio {
+  margin-right: 20px;
+}
+
+.grid {
+  display: -webkit-box;
+  display: box;
+}
+
+.col-0 {
+  -webkit-box-flex: 0;
+  box-flex: 0;
+}
+
+.col-1 {
+  -webkit-box-flex: 1;
+  box-flex: 1;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}

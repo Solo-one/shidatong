@@ -1,0 +1,170 @@
+/**index.wxss**/
+@import "../../app.wxss";
+
+page {
+  background: white;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.container1 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  height: 35px;
+  line-height: 35px;
+  width: 100px;
+  border-radius: 10px;
+  background: #09bb07;
+  color: white;
+  text-align: center;
+}
+
+.view_hide {
+  display: none;
+}
+
+.view_show {
+  display: block;
+}
+
+.title {
+  padding: 25rpx 25rpx 15rpx 25rpx;
+  font-size: 20px;
+  font-weight: bold;
+  text-indent: 15rpx;
+}
+
+.delete_show {
+  display: block;
+  text-align: right;
+  margin-right: 25rpx;
+  font-size: 14px;
+  color: #3A96FF;
+  float: right;
+  border: 1px solid #3A96FF;
+  border-radius: 12rpx;
+  padding: 1rpx 10rpx;
+}
+
+.person {
+  font-size: 14px;
+  margin-left: 40rpx;
+}
+
+.liness {
+  width: 98%;
+  background: gainsboro;
+  height: 1rpx;
+  margin: 5rpx 10rpx 5rpx 10rpx;
+}
+
+.time {
+  font-size: 14px;
+  margin-left: 40rpx;
+}
+
+.content {
+  padding: 20rpx;
+  font-size: 18px;
+  /* text-indent: 60rpx; */
+}
+
+.weui-grid__icon {
+  width: 100%;
+}
+
+.images {
+  margin: 3rpx 20rpx;
+  font-size: 18px;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  height: 450rpx;
+  width: 95%;
+  background: white;
+  margin: 0 20rpx 20rpx 20rpx;
+  box-shadow: 6rpx 5rpx 6rpx 3rpx gainsboro;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+}
+
+.sub {
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  height: 35px;
+  line-height: 35px;
+  width: 100px;
+  border-radius: 10px;
+  background: #09bb07;
+  color: white;
+  text-align: center;
+}
+
+.renzheng {
+  margin-top: 10px;
+  height: 35px;
+  line-height: 35px;
+  width: 120px;
+  border-radius: 10px;
+  background: #09bb07;
+  text-align: center;
+  color: white;
+}
+
+.usermotto {
+  margin-top: 200px;
+  justify-content: center;
+  display: flex;
+}
+
+.parent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.content1 {
+  font-size: 12px;
+  margin-left: 40rpx;
+  margin-bottom: 10rpx;
+}
+
+.document {
+   display: flex;
+   flex-direction: row;
+}
+
+.document .btn {
+  margin-top: 22rpx;
+  padding: 1rpx 10rpx;
+  height: 50rpx;
+  border: 1rpx solid white;
+  border-radius: 10rpx;
+  color: white;
+  background: #09bb07;
+}

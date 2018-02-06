@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<view class="container">
+  <form bindsubmit="submitTap" bindreset="formReset" report-submit="true">
+    <text class="headertext">标题：</text>
+    <view class="section1">
+      <textarea class='input1' name='noticeTitle' bindblur="bindTextAreaBlur" auto-height placeholder="填写公告标题" />
+    </view>
+
+    <text class="headertext">内容：</text>
+    <view class="section2">
+      <textarea class='input2' name='noticeContent' bindblur="bindTextAreaBlur" maxlength="500" auto-height placeholder="填写公告内容" />
+    </view>
+
+    <!-- <text class="headertext">添加文档：</text>
+    <view class="section2">
+      <textarea class='input2' name='noticeContent' bindblur="bindTextAreaBlur" maxlength="500" auto-height placeholder="填写公告内容" />
+    </view> -->
+
+    <text class="headertext">添加图片：</text>
+    <button class='addImage' bindtap="addImageTap">添加图片+</button>
+
+    <!--以下是gird关键代码-->
+    <view class="page__bd">
+      <view class="weui-grids">
+        <block wx:for-items="{{gridsImg}}" wx:key="{{index}}">
+          <view class="weui-grid">
+            <image class="weui-grid__icon" src="{{gridsImg[index]}}" mode="aspectFit" />
+          </view>
+        </block>
+      </view>
+    </view>
+
+    <button class="sub" formType="submit">确认发布</button>
+  </form>
+
+  <!-- <button class="sub" bindtap="submitTap">确认发布</button> -->
+
+</view>
